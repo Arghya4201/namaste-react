@@ -1,6 +1,6 @@
 const restList = [
     {
-      data: {
+      info: {
         id: "13927",
         name: "Wow! Momo",
         cloudinaryImageId: "64fd45fd9f44c1737bc446e470bed666",
@@ -82,7 +82,7 @@ const restList = [
       },
     },
     {
-      data: {
+      info: {
         id: "769456",
         name: "Pizza Hut",
         cloudinaryImageId: "490629b70f89da8a5b93fc199ece335e",
@@ -155,7 +155,7 @@ const restList = [
       },
     },
     {
-      data: {
+      info: {
         id: "3022",
         name: "Aminia Restaurant",
         cloudinaryImageId: "ub35uaf2iferroprejgy",
@@ -209,7 +209,7 @@ const restList = [
       },
     },
     {
-      data: {
+      info: {
         id: "576276",
         name: "Grameen Kulfi",
         cloudinaryImageId: "y1cgzcjr8gz71rrwajr0",
@@ -283,7 +283,7 @@ const restList = [
       },
     },
     {
-      data: {
+      info: {
         id: "719437",
         name: "McDonald's",
         cloudinaryImageId: "535fc9f9c135f7982317bbb6a64a1ffc",
@@ -356,7 +356,7 @@ const restList = [
       },
     },
     {
-      data: {
+      info: {
         id: "8914",
         name: "Subway",
         cloudinaryImageId:
@@ -411,7 +411,7 @@ const restList = [
       },
     },
     {
-      data: {
+      info: {
         id: "39309",
         name: "KFC",
         cloudinaryImageId:
@@ -485,7 +485,7 @@ const restList = [
       },
     },
     {
-      data: {
+      info: {
         id: "33209",
         name: "Wasabee",
         cloudinaryImageId: "gz25kb0bqqsg94mcgzhl",
@@ -566,7 +566,7 @@ const restList = [
       },
     },
     {
-      data: {
+      info: {
         id: "830564",
         name: "Olio - The Wood Fired Pizzeria",
         cloudinaryImageId:
@@ -641,7 +641,7 @@ const restList = [
       },
     },
     {
-      data: {
+      info: {
         id: "697216",
         name: "Domino's Pizza",
         cloudinaryImageId: "d0450ce1a6ba19ea60cd724471ed54a8",
@@ -715,7 +715,7 @@ const restList = [
       },
     },
     {
-      data: {
+      info: {
         id: "69297",
         name: "Machhli Baba Fries",
         cloudinaryImageId: "dvaa3cfy1v7tkdmesb7s",
@@ -779,7 +779,7 @@ const restList = [
       },
     },
     {
-      data: {
+      info: {
         id: "834096",
         name: "The Dessert Heaven - Pastry, Brownie and Cakes",
         cloudinaryImageId:
@@ -863,7 +863,7 @@ const restList = [
       },
     },
     {
-      data: {
+      info: {
         id: "29424",
         name: "Momo I Am",
         cloudinaryImageId: "vuygl4mrkquhg0ma5dqv",
@@ -916,7 +916,7 @@ const restList = [
       },
     },
     {
-      data: {
+      info: {
         id: "77719",
         name: "The Biryani Inc. By EatVerse",
         cloudinaryImageId: "55614156379db324675650213bb544a8",
@@ -974,7 +974,7 @@ const restList = [
       },
     },
     {
-      data: {
+      info: {
         id: "580620",
         name: "GetAWay-Ice Creams & Desserts",
         cloudinaryImageId: "8194c8fed09497bce3714d2586653545",
@@ -1051,7 +1051,7 @@ const restList = [
       },
     },
     {
-      data: {
+      info: {
         id: "45571",
         name: "Rang De Basanti Dhaba",
         cloudinaryImageId:
@@ -1135,7 +1135,7 @@ const restList = [
       },
     },
     {
-      data: {
+      info: {
         id: "41898",
         name: "Hatari",
         cloudinaryImageId: "bp49jytwil6kb1dq4keg",
@@ -1189,7 +1189,7 @@ const restList = [
       },
     },
     {
-      data: {
+      info: {
         id: "98861",
         name: "Deja Bowl",
         cloudinaryImageId: "fybypkgqba2zhph0lvsr",
@@ -1246,7 +1246,7 @@ const restList = [
       },
     },
     {
-      data: {
+      info: {
         id: "834825",
         name: "ENSO - Sourdough Pizza by Nomad",
         cloudinaryImageId: "5585f32b2ef84a5a951f635e87d853fe",
@@ -1320,7 +1320,7 @@ const restList = [
       },
     },
     {
-      data: {
+      info: {
         id: "10427",
         name: "Baskin Robbins - Ice Cream Desserts",
         cloudinaryImageId: "85ccae4e3576f9330af102c46ca85395",

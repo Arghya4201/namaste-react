@@ -2,7 +2,7 @@
 // Production build command : npx parcel build index.html
 // Dev build command : npx parcel index.html
 // parcel cache and dist are two folders that are generated when we build (prod/dev)
-//so like node modules, parcel cache and dist get generated when be run the build command so not push in git
+// so like node modules, parcel cache and dist get generated when be run the build command so not push in git
 
 -> React element => Object => ReactDom makes it an HTML element and pushes it to browser
 The root element from app.js is pushed to browser when the element is rendered and thus replaces what was present in index.html root to the new content of root of app.js
@@ -35,3 +35,8 @@ IF we need to write JSX syntax in multiple lines we warp it in first () brackets
     <h1 className="heading">Returning JSX using functional Component</h1>
   </div>
   );
+
+  -> useEffect(()=>,[]): contains a call back func and a dependency array
+      if the dependency array argument is missing then use effect is called after any component render (be it related to that useEffect hook or not)
+      if empty dependency array then the hook is called during initial render and just that once
+      if the array [variable] is not empty then useEffect is called every time "variable" is updated 

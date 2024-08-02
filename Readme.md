@@ -40,3 +40,8 @@ IF we need to write JSX syntax in multiple lines we warp it in first () brackets
       if the dependency array argument is missing then use effect is called after any component render (be it related to that useEffect hook or not)
       if empty dependency array then the hook is called during initial render and just that once
       if the array [variable] is not empty then useEffect is called every time "variable" is updated 
+
+  -> 2 types of routing:
+   1: server side routing: When we route the pages using anchor tags, hence while navigating to another page it fetches the data off that page and then reloads the whole page. e.g: Clicking on about us button would refresh whole page and take us to about us page
+
+   2: Client side routing: using link tags we only re-render / replace the required component and not refresh the whole page making it a single page application, i.e while navigating, whole page is not refreshed.

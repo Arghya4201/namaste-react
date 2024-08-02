@@ -3,3 +3,5 @@ export const CDN_URL =
 
 export const LOGO_URL =
   "https://i.pinimg.com/originals/9f/d9/98/9fd9986f0e671473ba6b9f9b74454a66.jpg";
+
+export const MENU_API = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=22.51800&lng=88.38320&restaurantId=";

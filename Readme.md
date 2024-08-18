@@ -45,3 +45,10 @@ IF we need to write JSX syntax in multiple lines we warp it in first () brackets
    1: server side routing: When we route the pages using anchor tags, hence while navigating to another page it fetches the data off that page and then reloads the whole page. e.g: Clicking on about us button would refresh whole page and take us to about us page
 
    2: Client side routing: using link tags we only re-render / replace the required component and not refresh the whole page making it a single page application, i.e while navigating, whole page is not refreshed.
+
+   -> Class based component lifecycle: constructor() -> render() -> componentDidMount() This is the order in which methods are called
+      constructor is used to initialize the variables and make an instance of the class based component
+      render() is used to render the ui elements
+      componentDidMount(): is used for api calls just like useEffect() is used in function based components
+
+      TO understand lifecycle better watch episode 8 from 1:10:00 

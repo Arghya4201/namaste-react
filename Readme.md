@@ -52,3 +52,16 @@ IF we need to write JSX syntax in multiple lines we warp it in first () brackets
       componentDidMount(): is used for api calls just like useEffect() is used in function based components
 
       TO understand lifecycle better watch episode 8 from 1:10:00 
+    
+    #ReadMe_LazyLoading
+    ->Also called bundling,on-demand loading,dynamic loading,etc
+    ->We divide our apps into mini apps else every component will load in a single js file and it would become very large taking significant time to load
+    ->Here for example we made an Grocery component and will lazy load it ,i.e only will load when demanded
+    ->We Hence do not import it normally instead import it using Lazy function
+    ->We also need to encase it in <Suspense></Suspense> so that it gets time to load when demanded else rendering happens even before the data is loaded then rendering would get suspended
+    ->The fall back in Suspense is what would be shown during the loading is happening. We can pass any jsx there i.e just html or an entire component 
+
+    #ReadMe_HigherOrderComponent
+    ->A higher order component is one that takes another component as input and returns it after some enhancement
+    ->Here we are making a higher order component named RestaurantCardPromoted that takes RestaurantCard component as input and adds a promoted label to it
+    ->The higher order function returns another function which in turn returns some JSX

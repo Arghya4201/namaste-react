@@ -2,16 +2,18 @@ import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
 const RestaurantMenu = () => {
-  const {resID} = useParams();
+  const { resID } = useParams();
   const resInfo = useRestaurantMenu(resID);
 
-
   if (resInfo === null) return <Shimmer></Shimmer>;
+  // console.log('resInfo:', resInfo.cards[4].groupedCard.cardGroupMap.REGULAR.cards[5]);
 
-  const { itemCards } =
-    resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card;
+  const  itemCards  =
+    resInfo.cards[4].groupedCard.cardGroupMap.REGULAR.cards[1].card.card.itemCards
 
   console.log(itemCards);
+
+  // console.log(itemCards);
 
   const { name, costForTwo, cloudinaryImageId, cuisines } =
     resInfo?.cards[2]?.card?.card?.info;
@@ -23,7 +25,7 @@ const RestaurantMenu = () => {
       <h2>Menu</h2>
       <ul>
         {itemCards.map((item) => (
-          <li key={item.card.info.id}>{item.card.info.name} - {"Rs "}{(item.card.info.price)/100} </li>
+          <li key={item.card.info.id}>{item.card.info.name} - {"Rs "}{(item.card.info.price) / 100} </li>
         ))}
       </ul>
     </div>

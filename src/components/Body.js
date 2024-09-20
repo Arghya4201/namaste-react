@@ -1,4 +1,4 @@
-import RestaurantCard  from "./RestaurantCard";
+import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -10,7 +10,8 @@ const Body = () => {
   console.log('List of restaurants',ListOfRestaurants);
 
   const [searchText, setSearchText] = useState("");
-  const RestaurantCardPromoted = 
+  //Calling the higher order function so now this variable has the enhanced component with the label in it
+  const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
   useEffect(() => {
     fetchData();
@@ -77,7 +78,8 @@ const Body = () => {
             key={restaurant.info.id}
             to={"/restaurants/" + restaurant.info.id}
           >
-            <RestaurantCard resData={restaurant}></RestaurantCard>
+            {restaurant.info.avgRating >4.6 ? <RestaurantCardPromoted resData={restaurant}></RestaurantCardPromoted> : <RestaurantCard resData={restaurant}></RestaurantCard>}
+            {/* <RestaurantCard resData={restaurant}></RestaurantCard> */}
           </Link>
         ))}
       </div>
